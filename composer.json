@@ -15,6 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">=8.1",
         "guzzlehttp/guzzle": "7.5.x-dev",
         "guzzlehttp/promises": "1.5",
         "ext-curl": "*",
