@@ -1,0 +1,23 @@
+{
+    "name": "aksoyih/earthquakes",
+    "description": "Combines data from Kandilli, AFAD and USGS",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Aksoyih\\Earthquakes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Haluk Aksoy",
+            "email": "haluk@ihaksoy.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "7.5.x-dev",
+        "guzzlehttp/promises": "1.5",
+        "ext-curl": "*",
+        "ext-iconv": "*"
+    }
+}
