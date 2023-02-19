@@ -94,7 +94,7 @@ $earthquakeData = $earthquakes->getEarthquakesFromSource('AFAD');
 ```
 
 ## TODO List
-- [ ]  
+- [ ]  Add sorting options
 
 ## Contributing
 
