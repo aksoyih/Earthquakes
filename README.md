@@ -95,6 +95,9 @@ $earthquakeData = $earthquakes->getEarthquakesFromSource('AFAD');
 
 ## TODO List
 - [ ]  Add sorting options
+- [ ]  Group earthquakes based on location, date and likelihood of being a single earthquake
+- [ ]  Add more sources
+- [ ]  Save data to some kind of database
 - [x]  Add tests
 
 ## Contributing
