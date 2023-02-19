@@ -71,6 +71,8 @@ class Kandilli
                 $mb = $pre_clean_data[7] == "-.-" ? null : $pre_clean_data[7];
                 $mw = $pre_clean_data[6] == "-.-" ? null : $pre_clean_data[6];
 
+                $pre_clean_data[0] = str_replace('.', '-', $pre_clean_data[0]);
+
                 // get general area of earthquake
                 $clean_data[] = [
                     'timestamp' => strtotime($pre_clean_data[0] . ' ' . $pre_clean_data[1]),
