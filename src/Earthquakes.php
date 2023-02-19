@@ -2,6 +2,8 @@
 
 namespace Aksoyih\Earthquakes;
 
+use Exception;
+
 class Earthquakes
 {
     private array $sources;
@@ -22,7 +24,13 @@ class Earthquakes
         return $clients;
     }
 
+    /**
+     * @throws Exception
+     */
     public function getClient($source){
+        if(!in_array($source, array_keys($this->sources))) {
+            throw new Exception('Invalid source');
+        }
         return $this->clients[$source];
     }
 
