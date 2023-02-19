@@ -35,7 +35,7 @@ class Earthquakes
         ];
     }
 
-    public function getEarthquakes(): array
+    public function getEarthquakesFromAllSources(): array
     {
         return [
             'kandilli' => $this->clients['Kandilli']->getEarthquakes()->wait(),
@@ -43,4 +43,10 @@ class Earthquakes
             'usgs' => $this->clients['USGS']->getEarthquakes()->wait(),
         ];
     }
+
+    public function getEarthquakesFromSource($source): array
+    {
+        return $this->clients[$source]->getEarthquakes()->wait();
+    }
+
 }
