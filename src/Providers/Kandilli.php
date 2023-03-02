@@ -25,7 +25,7 @@ class Kandilli
 
     public function getEarthquakes(){
 
-        $request = new Request('GET', 'http://www.koeri.boun.edu.tr/scripts/lst7.asp', [
+        $request = new Request('GET', 'http://udim.koeri.boun.edu.tr/zeqmap/xmlt/son24saat.xml',[
             'headers' => [
                 'Content-type' => 'Content-type: text/html; charset=UTF-8',
                 'Connection' => 'keep-alive',
@@ -43,58 +43,34 @@ class Kandilli
             'params.cache.default_ttl' => 0,
             'params.cache.revalidate'   => 'always'
         ]);
-
-        $promise = $this->client->sendAsync($request)->then(function ($response) {
-            $result = iconv("ISO-8859-9", "UTF-8", $response->getBody());
-            $data = explode('<pre>', strip_tags($result));
-            $data = explode("\n", $data[0]);
-            array_filter(array_map('trim', $data));
-
-            $key = array_search("---------- --------  --------  -------   ----------    ------------    --------------                                  --------------\r", $data);
-            $data = array_slice($data, $key+1);
-
-            $key = array_search("\r", $data);
-            $data = array_slice($data, 0, $key);
+        return $this->client->sendAsync($request)->then(function ($response) {
+            $xml = simplexml_load_string($response->getBody());
+            $earthquakes = json_decode(json_encode($xml), true)['earhquake'];
 
             $clean_data = [];
-            foreach ($data as $key => $value) {
-                $pre_clean_data =  array_values(array_filter(explode(' ', $value), function($value) { return $value !== ''; }));
+            foreach ($earthquakes as $earthquake){
+                $earthquake = $earthquake['@attributes'];
+                $timestamp = strtotime(str_replace(".", "/" , $earthquake['name']));
 
-                if(str_contains($pre_clean_data[9], '(')) {
-                    $pre_clean_data[8] = $pre_clean_data[8] . ' ' . $pre_clean_data[9];
-                    $pre_clean_data[9] = $pre_clean_data[10];
-                }
-
-                $pre_clean_data[9] = str_replace("\r", "", $pre_clean_data[9]);
-
-                $ml = $pre_clean_data[5] == "-.-" ? null : $pre_clean_data[5];
-                $mb = $pre_clean_data[7] == "-.-" ? null : $pre_clean_data[7];
-                $mw = $pre_clean_data[6] == "-.-" ? null : $pre_clean_data[6];
-
-                $pre_clean_data[0] = str_replace('.', '-', $pre_clean_data[0]);
-
-                // get general area of earthquake
                 $clean_data[] = [
-                    'timestamp' => strtotime($pre_clean_data[0] . ' ' . $pre_clean_data[1]),
-                    'date' => $pre_clean_data[0],
-                    'time' => $pre_clean_data[1],
-                    'latitude' => $pre_clean_data[2],
-                    'longitude' => $pre_clean_data[3],
-                    'depth' => $pre_clean_data[4],
+                    'timestamp' => $timestamp,
+                    'date' => date('Y-m-d', $timestamp),
+                    'time' => date('H:i:s', $timestamp),
+                    'latitude' => $earthquake['lat'],
+                    'longitude' => $earthquake['lng'],
+                    'depth' => $earthquake['Depth'],
                     'magnitude' => [
-                        'ml' => $ml,
-                        'mw' => $mw,
-                        'mb' => $mb,
+                        'ml' => $earthquake['mag'],
+                        'mw' => null,
+                        'mb' => null,
                     ],
-                    'region' => $pre_clean_data[8],
-                    'solution_type' => $pre_clean_data[9],
+                    'region' => rtrim($earthquake['lokasyon']),
+                    'solution_type' => null,
                     'additional_info' => []
                 ];
             }
 
             return $clean_data;
         });
-
-        return $promise;
     }
 }
