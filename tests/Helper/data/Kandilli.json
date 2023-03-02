@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": 1676828132,
+    "date": "2023-02-19",
+    "time": "17:35:32",
+    "latitude": "38.0105",
+    "longitude": "37.5137",
+    "depth": "4.1",
+    "magnitude": {
+      "ml": null,
+      "mw": "2.2",
+      "mb": null
+    },
+    "region": "TATLAR-NURHAK (KAHRAMANMARAS)",
+    "solution_type": "İlksel",
+    "additional_info": [
+
+    ]
+  },
+  {
+    "timestamp": 1676828762,
+    "date": "2023-02-19",
+    "time": "17:46:02",
+    "latitude": "37.8912",
+    "longitude": "36.6840",
+    "depth": "5.8",
+    "magnitude": {
+      "ml": null,
+      "mw": "2.8",
+      "mb": null
+    },
+    "region": "SAHINKAYASI-(KAHRAMANMARAS)",
+    "solution_type": "İlksel",
+    "additional_info": [
+
+    ]
+  },
+  {
+    "timestamp": 1676829394,
+    "date": "2023-02-19",
+    "time": "17:56:34",
+    "latitude": "38.2958",
+    "longitude": "37.8192",
+    "depth": "5.0",
+    "magnitude": {
+      "ml": null,
+      "mw": "2.7",
+      "mb": null
+    },
+    "region": "ORTAKOY-AKCADAG (MALATYA)",
+    "solution_type": "İlksel",
+    "additional_info": [
+
+    ]
+  },
+  {
+    "timestamp": 1676829088,
+    "date": "2023-02-19",
+    "time": "17:51:28",
+    "latitude": "37.4160",
+    "longitude": "37.0078",
+    "depth": "6.6",
+    "magnitude": {
+      "ml": null,
+      "mw": "2.6",
+      "mb": null
+    },
+    "region": "SIVRICEHUYUK-(KAHRAMANMARAS)",
+    "solution_type": "İlksel",
+    "additional_info": [
+
+    ]
+  },
+  {
+    "timestamp": 1676828701,
+    "date": "2023-02-19",
+    "time": "17:45:01",
+    "latitude": "37.4853",
+    "longitude": "37.0775",
+    "depth": "5.4",
+    "magnitude": {
+      "ml": null,
+      "mw": "1.8",
+      "mb": null
+    },
+    "region": "CIGLI-(KAHRAMANMARAS)",
+    "solution_type": "İlksel",
+    "additional_info": [
+
+    ]
+  }
+]

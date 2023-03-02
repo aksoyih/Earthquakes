@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": 1676830471,
+    "date": "2023-02-19",
+    "time": "18:14:31",
+    "latitude": "37.767",
+    "longitude": "37.674",
+    "depth": "6.29",
+    "magnitude": {
+      "ml": "2.4",
+      "mw": null,
+      "mb": null
+    },
+    "region": "Gölbaşı (Adıyaman)",
+    "solution_type": null,
+    "additional_info": {
+      "afad_earthquake_id": "550300"
+    }
+  },
+  {
+    "timestamp": 1676830195,
+    "date": "2023-02-19",
+    "time": "18:09:55",
+    "latitude": "37.419",
+    "longitude": "36.956",
+    "depth": "4.76",
+    "magnitude": {
+      "ml": "3.0",
+      "mw": null,
+      "mb": null
+    },
+    "region": "Dulkadiroğlu (Kahramanmaraş)",
+    "solution_type": null,
+    "additional_info": {
+      "afad_earthquake_id": "550298"
+    }
+  },
+  {
+    "timestamp": 1676830130,
+    "date": "2023-02-19",
+    "time": "18:08:50",
+    "latitude": "38.251",
+    "longitude": "38.83",
+    "depth": "7.0",
+    "magnitude": {
+      "ml": "1.8",
+      "mw": null,
+      "mb": null
+    },
+    "region": "Pütürge (Malatya)",
+    "solution_type": null,
+    "additional_info": {
+      "afad_earthquake_id": "550299"
+    }
+  },
+  {
+    "timestamp": 1676829893,
+    "date": "2023-02-19",
+    "time": "18:04:53",
+    "latitude": "38.908",
+    "longitude": "26.818",
+    "depth": "7.0",
+    "magnitude": {
+      "ml": "1.6",
+      "mw": null,
+      "mb": null
+    },
+    "region": "Ege Denizi - [05.01 km] Dikili (İzmir)",
+    "solution_type": null,
+    "additional_info": {
+      "afad_earthquake_id": "550301"
+    }
+  },
+  {
+    "timestamp": 1676829551,
+    "date": "2023-02-19",
+    "time": "17:59:11",
+    "latitude": "37.202",
+    "longitude": "36.595",
+    "depth": "4.68",
+    "magnitude": {
+      "ml": "1.4",
+      "mw": null,
+      "mb": null
+    },
+    "region": "Bahçe (Osmaniye)",
+    "solution_type": null,
+    "additional_info": {
+      "afad_earthquake_id": "550295"
+    }
+  }
+]

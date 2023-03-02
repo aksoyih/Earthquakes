@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": 1676648078,
+    "date": "2023-02-17",
+    "time": "15:34:38",
+    "latitude": 38.5844,
+    "longitude": 39.6476,
+    "depth": 10,
+    "magnitude": {
+      "ml": null,
+      "mw": null,
+      "mb": 4.5
+    },
+    "region": "23 km SW of Kovanc?lar, Turkey",
+    "solution_type": "reviewed",
+    "additional_info": {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jppv",
+      "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jppv&format=geojson",
+      "alert": null
+    }
+  },
+  {
+    "timestamp": 1676594157,
+    "date": "2023-02-17",
+    "time": "00:35:57",
+    "latitude": 39.1579,
+    "longitude": 40.1603,
+    "depth": 2.075,
+    "magnitude": {
+      "ml": null,
+      "mw": null,
+      "mb": 4.4
+    },
+    "region": "10 km SE of Yayladere, Turkey",
+    "solution_type": "reviewed",
+    "additional_info": {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jphu",
+      "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jphu&format=geojson",
+      "alert": null
+    }
+  },
+  {
+    "timestamp": 1676576869,
+    "date": "2023-02-16",
+    "time": "19:47:49",
+    "latitude": 36.1764,
+    "longitude": 35.7911,
+    "depth": 10,
+    "magnitude": {
+      "ml": null,
+      "mw": null,
+      "mb": 5.2
+    },
+    "region": "22 km W of Uzunba?, Turkey",
+    "solution_type": "reviewed",
+    "additional_info": {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jpff",
+      "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jpff&format=geojson",
+      "alert": null
+    }
+  },
+  {
+    "timestamp": 1676565512,
+    "date": "2023-02-16",
+    "time": "16:38:32",
+    "latitude": 37.9225,
+    "longitude": 37.5073,
+    "depth": 10,
+    "magnitude": {
+      "ml": null,
+      "mw": null,
+      "mb": 4.1
+    },
+    "region": "7 km SE of Nurhak, Turkey",
+    "solution_type": "reviewed",
+    "additional_info": {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jpee",
+      "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jpee&format=geojson",
+      "alert": null
+    }
+  },
+  {
+    "timestamp": 1676558742,
+    "date": "2023-02-16",
+    "time": "14:45:42",
+    "latitude": 38.2035,
+    "longitude": 37.8096,
+    "depth": 10,
+    "magnitude": {
+      "ml": null,
+      "mw": null,
+      "mb": 4.5
+    },
+    "region": "14 km NNW of Do?an?ehir, Turkey",
+    "solution_type": "reviewed",
+    "additional_info": {
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jpdx",
+      "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jpdx&format=geojson",
+      "alert": null
+    }
+  }
+]
